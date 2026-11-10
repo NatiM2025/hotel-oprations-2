@@ -1,5 +1,7 @@
 package com.pluralsight;
 
+import java.time.LocalTime;
+
 /**
  * Employee (Workbook 4a, Section 2-1 Creating Classes, Exercise 1)
  *
@@ -80,4 +82,13 @@ public class Employee {
             return 0;
         }
     }
+    public String punchIn (){
+        LocalTime localTime = LocalTime.now();
+        return "PunchIn" + localTime.toString();
+    }
+    public String punchout (){
+        LocalTime localTime = LocalTime.now();
+        return "PunchOut" + localTime.toString();
+    }
+
 }
